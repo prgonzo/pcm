@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+    
+    --praise-bg: 37 30% 94%;
+    --praise-text: 0 0% 13%;
+    --praise-title: 355 66% 7%;
+    --praise-primary: 4 75% 47%;
+    --praise-primaryHover: 4 75% 41%;
+    --praise-secondary: 355 66% 7%;
+    --praise-secondaryHover: 355 44% 14%;
+    --praise-dark: 355 66% 7%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply font-dm-sans scroll-smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-[#F3F1EB] text-[#222222];
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    padding-top: 60px; /* Añadir espacio para el header fijo */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[#240908] font-semibold;
+  }
+}
+
+@layer components {
+  .container-praise {
+    @apply container px-3 sm:px-4 mx-auto max-w-7xl;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    @apply bg-[#D4201A] hover:bg-[#B91D18] text-white font-medium px-6 py-2 rounded transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#240908] hover:bg-[#321614] text-white font-medium px-6 py-2 rounded transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply bg-transparent hover:bg-white/10 border border-white/70 text-white font-medium px-6 py-2 rounded transition-colors duration-300;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-[#240908];
+  }
+  
+  .section-subtitle {
+    @apply text-lg md:text-xl lg:text-2xl font-medium mb-4 text-[#240908];
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out forwards;
+}
+
+/* Extra responsive adjustments for very small screens */
+@media (max-width: 375px) {
+  .header-small-screen .give-button {
+    display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  .header-small-screen {
+    font-size: 0.9rem;
+  }
+  
+  .header-small-screen .language-switcher {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 330px) {
+  .header-small-screen {
+    padding: 0.5rem 0;
+  }
+  
+  .header-small-screen .logo {
+    font-size: 1rem;
+  }
+}

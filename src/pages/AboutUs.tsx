@@ -1,0 +1,249 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Hero from '@/components/Hero';
+import { ChevronDown } from 'lucide-react';
+import ValueSection from '@/components/ValueSection';
+import FlagSection from '@/components/FlagSection';
+import { useTranslation } from '@/hooks/useTranslation';
+import PageTitle from '@/components/PageTitle';
+
+const AboutUs = () => {
+  const [showFullContent, setShowFullContent] = useState(false);
+  const { language } = useTranslation();
+
+  const content = {
+    en: {
+      heroTitle: "About Us",
+      beginningTitle: "The Beginning",
+      readMore: "Read More",
+      showLess: "Show Less",
+      pastorsTitle: "Ralph and Wendi Gonzales",
+      pastorsRole: "International Senior Pastors",
+      meetPastors: "Meet The Pastors",
+      visionTitle: "The Vision",
+      visionSubtitle: "Win. Build. Send.",
+      visionText: "We win the lost through evangelism, build them up through discipleship, and then send them out to fulfill their callings.",
+      visionButton: "Our Vision",
+      believeTitle: "What We Believe",
+      believeText: "Praise Chapel Ministries is a fellowship of churches that believes the Bible, both the Old and New Testaments, is the Holy, Inspired Word of God. It serves as the infallible and authoritative guide for matters of faith, conduct, and doctrine.",
+      believeButton: "Our Statement of Beliefs",
+      anniversaryTitle: "40 Year PC",
+      anniversarySubtitle: "Anniversary Video",
+      watchNow: "Watch Now"
+    },
+    es: {
+      heroTitle: "Nosotros",
+      beginningTitle: "El Comienzo",
+      readMore: "Leer Más",
+      showLess: "Mostrar Menos",
+      pastorsTitle: "Ralph y Wendi Gonzales",
+      pastorsRole: "Pastores Internacionales",
+      meetPastors: "Conoce a los Pastores",
+      visionTitle: "La Visión",
+      visionSubtitle: "Ganar. Edificar. Enviar.",
+      visionText: "Ganamos a los perdidos a través del evangelismo. Luego edificamos a aquellos que son ganados para el Señor a través del discipulado. Una vez que están equipados, los enviamos a sus respectivos llamados.",
+      visionButton: "Nuestra Visión",
+      believeTitle: "Lo Que Creemos",
+      believeText: "Ministerios Praise Chapel es una comunidad de iglesias que creen que la Biblia, tanto el Antiguo como el Nuevo Testamento, es la Santa Palabra Inspirada de Dios y sirve como guía infalible y autoritativa para asuntos de fe, conducta y doctrina.",
+      believeButton: "Nuestra Declaración de Fe",
+      anniversaryTitle: "40 Años de PC",
+      anniversarySubtitle: "Video de Aniversario",
+      watchNow: "Ver Ahora"
+    }
+  };
+
+  const currentContent = language === 'es' ? content.es : content.en;
+
+  return (
+    <>
+      <PageTitle title="About Us" />
+      <Header />
+      
+      <main>
+        <section 
+          className="relative bg-praise-dark text-white min-h-[60vh] flex items-center"
+          style={{
+            backgroundImage: `linear-gradient(rgba(36, 9, 8, 0.5), rgba(36, 9, 8, 0.5)), url(/lovable-uploads/aboutushero.jpeg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center right',
+          }}
+        >
+          <div className="container-praise py-12 relative z-10">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white animate-fade-in">
+                {currentContent.heroTitle}
+              </h1>
+            </div>
+          </div>
+        </section>
+        
+        <section className="py-12 bg-white">
+          <div className="container-praise">
+            <h2 className="section-title mb-8 text-center">{currentContent.beginningTitle}</h2>
+            <div className="max-w-3xl mx-auto">
+              <div className={`transition-all duration-500 ease-in-out ${showFullContent ? 'max-h-none' : 'max-h-[300px] overflow-hidden relative'}`}>
+                {language === 'es' ? (
+                  <>
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Praise Chapel Christian Fellowship (PCCF) comenzó en Maywood, California, como una sola iglesia en 1976. Los Pastores Mike y Donna Neville se mudaron al área de Los Ángeles desde Tulsa, Oklahoma. La iglesia en Maywood estaba ubicada en un área llena de pandillas y drogas. En unos pocos años, Dios comenzó a mover de una manera muy especial cuando los miembros de las pandillas y sus familias comenzaron a ser salvos. Pronto, la iglesia se llenó de personas apasionadas por Dios, que salieron fuera de los muros de la iglesia y a las calles, predicando el evangelio, lo que resultó en que muchos fueran salvos.
+                    </p>
+                    
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Los Pastores Mike y Donna comenzaron a levantar pastores para enviarlos a varias áreas del sur de California para iniciar nuevas iglesias. Dios bendijo estas nuevas iglesias mientras alcanzaban a los perdidos y continuaban la visión que Dios les dio a los Pastores Mike y Donna: GANAR-EDIFICAR-ENVIAR. Esta visión continúa hoy, ya que Praise Chapel se ha multiplicado en todo Estados Unidos y alrededor del mundo. Al momento de escribir esto, hay más de 4,300 iglesias Praise Chapel en todo el mundo. La historia de Praise Chapel continúa creciendo, con nuevas iglesias siendo plantadas constantemente. Es verdaderamente una historia del Libro de los Hechos siendo escrita hoy.
+                    </p>
+                    
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Los Pastores Randal (Razz) y Eva Taylor de Praise Chapel Concord continuaron la visión al levantar a los Pastores Ralph y Wendi Gonzales, quienes fueron enviados a iniciar una iglesia en Pittsburg, California, en marzo de 2007. Comenzaron Praise Chapel Pittsburg en una casa, realizando estudios bíblicos en la residencia López en Antioch, California. Su servicio oficial de inauguración se llevó a cabo el 15 de julio de 2007.
+                    </p>
+                    
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Los Pastores Ralph y Wendi continuaron la visión de GANAR-EDIFICAR-ENVIAR al enviar obreros al campo misionero, iniciando nuevas iglesias, e incluso adoptando otras iglesias que se extendían desde el Área de la Bahía de San Francisco hasta Europa e India. En julio de 2021, los Pastores Ralph y Wendi respondieron al llamado una vez más para iniciar una iglesia en Barcelona, España, donde actualmente están pastoreando.
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Praise Chapel Christian Fellowship (PCCF) began in Maywood, California, as a single church in 1976. Pastors Mike and Donna Neville moved to the Los Angeles area from Tulsa, Oklahoma. The church in Maywood was located in an area filled with gangs and drugs. Within a few years, God began moving in a very special way as gang members and their families started getting saved. Soon, the church was filled with people on fire for God, who went outside the church walls and into the streets, preaching the gospel, which resulted in many being saved.
+                    </p>
+                    
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Pastors Mike and Donna began raising up pastors to send to various areas of Southern California to start new churches. God blessed these new churches as they reached out to the lost and continued the vision God gave Pastors Mike and Donna: WIN-BUILD-SEND. This vision continues today, as Praise Chapel has multiplied throughout the United States and around the world. As of this writing, there are over 4,300 Praise Chapel churches worldwide. The story of Praise Chapel continues to grow, with new churches constantly being planted. It is truly a Book of Acts story being written today.
+                    </p>
+                    
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Pastors Randal (Razz) and Eva Taylor of Praise Chapel Concord continued the vision by raising up Pastors Ralph and Wendi Gonzales, who were sent to pioneer a church in Pittsburg, California, in March 2007. They started Praise Chapel Pittsburg in a house, holding Bible studies at the Lopez residence in Antioch, California. Their official grand opening service was held on July 15, 2007.
+                    </p>
+                    
+                    <p className="text-lg mb-4 leading-[28px]">
+                      Pastors Ralph and Wendi carried on the vision of WIN-BUILD-SEND by sending workers into the mission field, starting new churches, and even adopting other churches that extended from the San Francisco Bay Area to Europe and India. In July 2021, Pastors Ralph and Wendi answered the call once again to pioneer a church in Barcelona, Spain, where they are currently Pastoring.
+                    </p>
+                  </>
+                )}
+                
+                {!showFullContent && (
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+                )}
+              </div>
+              
+              <div className="flex justify-center mt-8">
+                <button 
+                  onClick={() => setShowFullContent(!showFullContent)}
+                  className="flex items-center gap-2 px-6 py-3 bg-praise-bg hover:bg-praise-bg/80 text-praise-title font-medium rounded-full transition-all duration-300"
+                >
+                  {showFullContent ? currentContent.showLess : currentContent.readMore}
+                  <ChevronDown className={`h-5 w-5 transition-transform duration-300 ${showFullContent ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section className="py-12 bg-gray-100">
+          <div className="container-praise text-center">
+            <div className="max-w-3xl mx-auto">
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/ralphandwendy.jpg" 
+                  alt="Ralph and Wendi Gonzales"
+                  className="w-48 h-48 rounded-full object-cover mx-auto mb-4 border-4 border-white shadow-md"
+                />
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2">{currentContent.pastorsTitle}</h2>
+              <p className="text-lg text-gray-600 mb-6">{currentContent.pastorsRole}</p>
+              <Link 
+                to="/meet-the-pastors"
+                className="inline-block px-6 py-3 bg-praise-primary text-white rounded-full hover:bg-praise-primary/90 transition-colors"
+              >
+                {currentContent.meetPastors}
+              </Link>
+            </div>
+          </div>
+        </section>
+        
+        <section className="py-32 bg-praise-dark text-white" style={{
+          backgroundImage: `linear-gradient(rgba(36, 9, 8, 0.5), rgba(36, 9, 8, 0.5)), url(/lovable-uploads/thevision.jpeg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}>
+          <div className="container-praise text-center">
+            <h2 className="section-title text-white mb-3">{currentContent.visionTitle}</h2>
+            <h3 className="text-xl mb-6 text-white">{currentContent.visionSubtitle}</h3>
+            
+            <p className="max-w-3xl mx-auto text-lg mb-8 text-white">
+              {currentContent.visionText}
+            </p>
+            
+            <Link 
+              to="/our-vision"
+              className="inline-block px-6 py-3 border-2 border-white text-white rounded-full hover:bg-white hover:text-praise-dark transition-colors"
+            >
+              {currentContent.visionButton}
+            </Link>
+          </div>
+        </section>
+        
+        <section className="py-12 bg-white">
+          <div className="container-praise text-center">
+            <h2 className="section-title mb-3">{currentContent.believeTitle}</h2>
+            
+            <p className="max-w-3xl mx-auto text-lg mb-8">
+              {currentContent.believeText}
+            </p>
+            
+            <Link 
+              to="/we-believe"
+              className="inline-block px-6 py-3 border-2 border-praise-primary text-praise-primary rounded-full hover:bg-praise-primary hover:text-white transition-colors"
+            >
+              {currentContent.believeButton}
+            </Link>
+          </div>
+        </section>
+        
+        <section className="py-48 bg-praise-dark text-white relative overflow-hidden">
+          <div className="absolute inset-0 w-full h-full overflow-hidden">
+            <div className="absolute inset-0 bg-praise-dark opacity-60 z-10"></div>
+            <div className="absolute inset-0 w-full h-full">
+            <iframe 
+                className="absolute w-[300%] h-[300%] min-w-full min-h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover md:w-[200%] md:h-[200%]"
+              src="https://player.vimeo.com/video/205116941?background=1&autoplay=1&loop=1&byline=0&title=0&#t=478s" 
+              allow="autoplay; fullscreen" 
+              allowFullScreen
+                frameBorder="0"
+              title="40 Year PC Anniversary Video"
+              style={{ 
+                objectFit: 'cover',
+                  objectPosition: 'center center',
+                  width: '300%',
+                  height: '300%',
+                  transform: 'translate(-50%, -50%) scale(1.1)'
+              }}
+            ></iframe>
+            </div>
+          </div>
+          
+          <div className="container-praise text-center relative z-20">
+            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">{currentContent.anniversaryTitle}</h2>
+            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-white">{currentContent.anniversarySubtitle}</h3>
+            
+            <a 
+              href="https://vimeo.com/205116941#t=478s" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 border-2 border-white text-white rounded-full hover:bg-white hover:text-praise-dark transition-colors"
+            >
+              {currentContent.watchNow}
+            </a>
+          </div>
+        </section>
+        
+        <FlagSection />
+      </main>
+      
+      <Footer />
+    </>
+  );
+};
+
+export default AboutUs;
