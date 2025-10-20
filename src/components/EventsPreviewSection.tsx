@@ -48,7 +48,7 @@ const EventsPreviewSection = () => {
       time: language === 'es' ? "6-8 de Noviembre, 2025" : "November 6-8, 2025",
       image: "/lovable-uploads/womenconference.jpeg",
       categoryKey: "conference",
-      link: "/events"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdh7_fV1_UNDnvnUrVqfXSv4RoekIYaluqNtKVyO0HuhryUSQ/viewform?usp=send_form"
     }
   ];
 
