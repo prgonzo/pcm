@@ -19,7 +19,7 @@ const SpainChurch = () => {
     en: {
       title: "The Gathering Place Barcelona",
       subtitle: "International Church",
-      welcomeText: "We invite you to join us for a worship service! We are a family of believers who love Jesus and want to grow in our understanding of God's Word. Our church is built on loving one another, so you'll feel at home the moment you arrive. We look forward to seeing you!",
+      welcomeText: "We invite you to join us for a worship service! We are a family of believers who love Jesus and one another, so you’ll feel at home from the moment you arrive. We look forward to meeting you! Our services are bilingual (English, translated into Spanish).",
       serviceTimes: "Service Times",
       location: "Location",
       watchLive: "WATCH LIVE",
@@ -58,7 +58,7 @@ const SpainChurch = () => {
     es: {
       title: "The Gathering Place Barcelona",
       subtitle: "Iglesia Internacional",
-      welcomeText: "Te invitamos a asistir a uno de nuestros servicios de adoración. Somos una familia de creyentes que ama a Jesús con pasión y busca profundizar nuestro entendimiento de la Palabra de Dios. Nuestra iglesia se basa en amarnos unos a otros, así que te sentirás como en familia desde el momento en que llegues. ¡Esperamos verte pronto!",
+      welcomeText: "¡Te invitamos a unirte a nosotros para un servicio de adoración! Somos una familia de creyentes que amamos a Jesús y los unos a los otros, así que te sentirás como en casa desde el momento en que llegues! ¡Esperamos conocerte pronto! Nuestros servicios son bilingües (en inglés, con traducción al español)!",
       serviceTimes: "Horarios de Servicio",
       location: "Ubicación",
       watchLive: "VER EN VIVO",
