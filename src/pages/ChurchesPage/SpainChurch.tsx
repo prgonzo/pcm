@@ -229,7 +229,7 @@ const SpainChurch = () => {
                     <div className="h-full">
                       <ChurchCarousel
                         images={[
-                          "/lovable-uploads/bar 1.jpg",
+                          "/lovable-uploads/DSCF9696.jpg",
                           "/lovable-uploads/DSCF9742.jpg",
                           "/lovable-uploads/barc 2.jpg",
                           "/lovable-uploads/bar 4.jpg",
