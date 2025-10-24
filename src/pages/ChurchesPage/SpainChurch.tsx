@@ -232,7 +232,7 @@ const SpainChurch = () => {
                           "/lovable-uploads/DSCF9696.jpg",
                           "/lovable-uploads/DSCF9742.jpg",
                           "/lovable-uploads/barc 2_crop.jpg",
-                          "/lovable-uploads/bar 4.jpg",
+                          
                           "/lovable-uploads/IMG_1868 2_crop.jpg",
                         ]}
                         className="rounded-lg"
