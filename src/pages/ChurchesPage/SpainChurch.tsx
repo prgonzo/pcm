@@ -229,9 +229,13 @@ const SpainChurch = () => {
                     <div className="h-full">
                       <ChurchCarousel
                         images={[
+                          "/lovable-uploads/bar 1.jpg",
+                          "/lovable-uploads/DSCF9742.jpg",
+                          "/lovable-uploads/barc 2.jpg",
+                          "/lovable-uploads/bar 4.jpg",
+                          "/lovable-uploads/IMG_1868 2.JPG",
                           "/lovable-uploads/spain1.jpg",
                           "/lovable-uploads/spain2.jpg",
-                          "/lovable-uploads/spain3.jpg",
                           "/lovable-uploads/pastor-praying.webp"
                         ]}
                         className="rounded-lg"
