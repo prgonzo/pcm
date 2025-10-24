@@ -231,8 +231,7 @@ const SpainChurch = () => {
                         images={[
                           "/lovable-uploads/DSCF9696.jpg",
                           "/lovable-uploads/DSCF9742.jpg",
-                          "/lovable-uploads/barc 2_crop.jpg",
-                          
+                          "/lovable-uploads/barc 2_crp.jpg",
                           "/lovable-uploads/IMG_1868 2_crop.jpg",
                         ]}
                         className="rounded-lg"
