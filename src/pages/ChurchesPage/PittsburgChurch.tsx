@@ -272,6 +272,10 @@ const PittsburgChurch = () => {
                     <div className="h-full">
                       <ChurchCarousel
                         images={[
+                          "/lovable-uploads/Javi worship.jpg",
+                          "/lovable-uploads/Pastor Scott praying.jpg",
+                          "/lovable-uploads/Pete worship.jpg",
+                          "/lovable-uploads/Cella & Sam worship.jpg",
                           "/lovable-uploads/pittsburg1.jpeg",
                           "/lovable-uploads/pittsburg2.jpg",
                           "/lovable-uploads/pittsburg3.jpg"
