@@ -30,7 +30,7 @@ const SpainChurch = () => {
       },
       aboutSection: {
         title: "About Our Church",
-        content: "The Gathering Place Barcelona is an international, multicultural church in the heart of Barcelona, Spain. We are a community of believers from different countries and backgrounds, united by our love for Jesus Christ and our desire to grow in faith together."
+        content: "Praise Chapel Barcelona is an international, multicultural church in the heart of Barcelona, Spain. We are a community of believers from different countries and backgrounds, united by our love for Jesus Christ and our desire to grow in faith together."
       },
       pastorsSection: {
         title: "Senior Pastors",
@@ -56,7 +56,7 @@ const SpainChurch = () => {
       location_address: "Hotel Sercotel Caspe: C/ de Casp, 103, L'Eixample, 08013 Barcelona"
     },
     es: {
-      title: "The Gathering Place Barcelona",
+      title: "Praise Chapel Barcelona",
       subtitle: "Iglesia Internacional",
       welcomeText: "¡Te invitamos a unirte a nosotros para un servicio de adoración! Somos una familia de creyentes que amamos a Jesús y los unos a los otros, así que te sentirás como en casa desde el momento en que llegues! ¡Esperamos conocerte pronto! Nuestros servicios son bilingües (en inglés, con traducción al español)!",
       serviceTimes: "Horarios de Servicio",
