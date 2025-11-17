@@ -17,7 +17,7 @@ const SpainChurch = () => {
   
   const content = {
     en: {
-      title: "The Gathering Place Barcelona",
+      title: "Praise Chapel Barcelona",
       subtitle: "International Church",
       welcomeText: "We invite you to join us for a worship service! We are a family of believers who love Jesus and one another, so you’ll feel at home from the moment you arrive. We look forward to meeting you! Our services are bilingual (English, translated into Spanish).",
       serviceTimes: "Service Times",
@@ -69,7 +69,7 @@ const SpainChurch = () => {
       },
       aboutSection: {
         title: "Sobre Nuestra Iglesia",
-        content: "The Gathering Place Barcelona es una iglesia internacional y multicultural en el corazón de Barcelona, España. Somos una comunidad de creyentes de diferentes países y orígenes, unidos por nuestro amor por Jesucristo y nuestro deseo de crecer juntos en nuestro camino de fe."
+        content: "Praise Chapel Barcelona es una iglesia internacional y multicultural en el corazón de Barcelona, España. Somos una comunidad de creyentes de diferentes países y orígenes, unidos por nuestro amor por Jesucristo y nuestro deseo de crecer juntos en nuestro camino de fe."
       },
       pastorsSection: {
         title: "Pastores Principales",
