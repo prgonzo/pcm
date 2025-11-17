@@ -107,7 +107,7 @@ const SpainChurch = () => {
         <Hero 
           title={currentContent.title}
           subtitle={currentContent.subtitle}
-          backgroundImage="/lovable-uploads/hero-spain.webp"
+          backgroundImage="/lovable-uploads/TGP.jpg"
           backgroundPosition="center"
           height="min-h-[60vh]"
           showScrollArrow={true}
@@ -233,6 +233,8 @@ const SpainChurch = () => {
                           "/lovable-uploads/DSCF9742.jpg",
                           "/lovable-uploads/barc 2_cut.jpg",
                           "/lovable-uploads/IMG_1868 2_crop.jpg",
+                          "/lovable-uploads/DSCF0078.JPG",
+                          "/lovable-uploads/DSCF8844.JPG",
                         ]}
                         className="rounded-lg"
                       />
