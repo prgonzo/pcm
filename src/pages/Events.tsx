@@ -45,9 +45,9 @@ const Events = () => {
     },
     {
       id: 3,
-      titleKey: "pcmAnnualConferences",
+      titleKey: "pccfAnnualConferences",
       date: language === 'es' ? "21-24 de Julio" : "July 20-24",
-      location: "293 Alves Lane, Bay Point",
+      location: "Anaheim, CA, USA",
       time: language === 'es' ? "21-24 de Julio, 2026" : "July 21-24, 2026",
       image: "/lovable-uploads/PC_50-ann.jpg",
       categoryKey: "conference",
