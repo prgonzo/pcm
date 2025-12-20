@@ -46,12 +46,12 @@ const Events = () => {
     {
       id: 3,
       titleKey: "pcmAnnualConferences",
-      date: language === 'es' ? "6-8 de Noviembre" : "November 6-8",
+      date: language === 'es' ? "21-24 de Julio" : "July 20-24",
       location: "293 Alves Lane, Bay Point",
-      time: language === 'es' ? "6-8 de Noviembre, 2025" : "November 6-8, 2025",
-      image: "/lovable-uploads/womenconference.jpeg",
+      time: language === 'es' ? "21-24 de Julio, 2026" : "July 21-24, 2026",
+      image: "/lovable-uploads/PC_50-ann.jpg",
       categoryKey: "conference",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdh7_fV1_UNDnvnUrVqfXSv4RoekIYaluqNtKVyO0HuhryUSQ/viewform"
+      link: "https://www.pcglobalnetwork.com/event-details/pccf-50th-anniversary?fbclid=IwRlRTSAOzLr5leHRuA2FlbQIxMQBzcnRjBmFwcF9pZAo2NjI4NTY4Mzc5AAEekRaeaWkrrNuyi9tJl2J7YF1Bbk_QNiyhyuT_QO2xUjoSZu0I_R7TdvnOtkc_aem_eCP8u7epbO2UuTcQKY2agA"
     }
   ];
 
