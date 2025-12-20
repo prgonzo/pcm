@@ -45,7 +45,7 @@ const Events = () => {
     },
     {
       id: 3,
-      titleKey: "pccfAnnualConferences",
+      titleKey: "PCCF 50th Anniversary",
       date: language === 'es' ? "21-24 de Julio" : "July 20-24",
       location: "Anaheim, CA, USA",
       time: language === 'es' ? "21-24 de Julio, 2026" : "July 21-24, 2026",
