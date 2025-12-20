@@ -201,7 +201,7 @@ const SpainChurch = () => {
                       </p>
                       <div className="flex space-x-4 mt-6">
                         <a 
-                          href="https://www.instagram.com/tgp.barcelona/" 
+                          href="https://www.instagram.com/praisechapel.bcn/" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="p-2 bg-praise-bg rounded-full hover:bg-praise-primary/10 transition-colors"
@@ -296,7 +296,7 @@ const SpainChurch = () => {
                         <h3 className="font-bold mb-1">{currentContent.contactSection.connectWithUs}</h3>
                         <div className="flex space-x-4">
                           <a 
-                            href="https://www.instagram.com/tgp.barcelona/" 
+                            href="https://www.instagram.com/praisechapel.bcn/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="p-2 bg-praise-bg rounded-full hover:bg-praise-primary/10 transition-colors"
