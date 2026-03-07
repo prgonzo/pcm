@@ -239,7 +239,7 @@ const IndiaChurch = () => {
                     <div className="flex justify-center mb-8">
                       <div style={{ width: 'min(45vw, 16rem)', height: 'min(45vw, 16rem)' }} className="overflow-hidden rounded-full shadow-md">
                         <img 
-                          src="/lovable-uploads/pastorsindia.jpg" 
+                          src="/lovable-uploads/2026-03_Kumar-Family.jpg" 
                           alt="Satish & Laffi Kumar" 
                           className="w-full h-full object-cover object-center"
                         />
