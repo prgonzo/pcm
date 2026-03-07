@@ -63,7 +63,7 @@ const IndiaChurch = () => {
         linepallavapalem: {
           sunday: "Town church @ 7:00 PM",
           friday: "",
-          location: "Linepallavapalem, perupalem South"
+          location: "1-64, Beach Road,K P Palem South,Mogalthur, West Godavari, Andhra Pradesh,534280 India"
         }
       }
     },
@@ -114,7 +114,7 @@ const IndiaChurch = () => {
         linepallavapalem: {
           sunday: "Iglesia del pueblo @ 7:00 PM",
           friday: "",
-          location: "Linepallavapalem, perupalem South"
+          location: "1-64, Beach Road,K P Palem South,Mogalthur, West Godavari, Andhra Pradesh,534280 India"
         }
       }
     }
@@ -246,7 +246,7 @@ const IndiaChurch = () => {
                       </div>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-700">{currentContent.pastorsSection.title}</h2>
-                    <h3 className="text-2xl md:text-3xl font-medium mb-4 md:mb-6 text-gray-600">Satish & Laffi Kumar</h3>
+                    <h3 className="text-2xl md:text-3xl font-medium mb-4 md:mb-6 text-gray-600">K SATISH KUMAR & K SWARUPA RANI</h3>
                     <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
                       {currentContent.pastorsSection.content}
                     </p>
@@ -263,7 +263,7 @@ const IndiaChurch = () => {
                           <MapPin className="h-5 w-5 text-praise-primary mt-1 mr-3 flex-shrink-0" />
                           <div>
                             <h3 className="font-bold mb-1">{currentContent.contactSection.address}</h3>
-                            <p>Lakkuvarithota, mogalthur or Linepallavapalem, perupalem South</p>
+                            <p>1-64, Beach Road,K P Palem South,Mogalthur, West Godavari, Andhra Pradesh,534280 India South</p>
                           </div>
                         </div>
                         
