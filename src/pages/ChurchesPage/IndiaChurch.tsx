@@ -271,7 +271,7 @@ const IndiaChurch = () => {
                           <Mail className="h-5 w-5 text-praise-primary mt-1 mr-3 flex-shrink-0" />
                           <div>
                             <h3 className="font-bold mb-1">{currentContent.contactSection.email}</h3>
-                            <p>satishkondeti99@gmail.com</p>
+                            <p>kppalempcm2020@gmail.com</p>
                           </div>
                         </div>
                         
