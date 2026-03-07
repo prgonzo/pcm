@@ -32,7 +32,7 @@ const MeetPastors = () => {
       name: "K Satish Kumar & K Swarupa Rani",
       role: language === 'es' ? "Pastores Supervisores de India" : "India Overseeing Pastors",
       email: "kppalempcm2020@gmail.com",
-      imageSrc: "/lovable-uploads/pastorsindia.jpg"
+      imageSrc: "/lovable-uploads/2026-03_Kumar-Family.jpg.jpg"
     },
     {
       name: "Nic & Paola Rosales",
